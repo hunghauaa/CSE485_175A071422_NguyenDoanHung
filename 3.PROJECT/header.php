@@ -24,6 +24,7 @@
                             <?php if (isset($_SESSION['name'])&&isset($_SESSION['role'])){ ?>
                                 <li class="top-header__item"><a href="profile.php">Xin chào <?php echo $_SESSION['name'] ?></a></li>
                                 <li class="top-header__item"><a href="http://localhost/web/3.PROJECT/UI-detailUsers.php">Admin</a></li>
+                                <li class="top-header__item"><a href="http://localhost/web/3.PROJECT/UI-detailPosts.php">Admin</a></li>
                                 <li class="top-header__item"><a href="controller/users/logout.php">Đăng Xuất</a></li>
 
                             <?php }elseif (isset($_SESSION['name'])){ ?>
@@ -46,7 +47,7 @@
                             <li class="main-header__item"><i class="fa fa-graduation-cap"></i> tuyển sinh</li>
                             <li class="main-header__item"><i class="fa fa-book"></i> đào tạo</li>
                             <li class="main-header__item"><i class="fa fa-bookmark"></i> nghiên cứu</li>
-                            <li class="main-header__item"><i class="fa fa-handshake-o"></i> hợp tác doanh nghiệp</li>
+                            <li class="main-header__item"><i class="fas fa-handshake"></i> hợp tác doanh nghiệp</li>
                         </ul>
                     </div>
                 </div>

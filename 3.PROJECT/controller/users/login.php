@@ -29,8 +29,8 @@
                 $_SESSION['name'] = $row['firtname'];
                 if($row['role'] == 'Admin'){
                     $_SESSION['role'] = $row['role'];
+                    $_SESSION['id'] = $row['id'];
                 }
-
                 Header("Location:http://localhost/web/3.PROJECT/");
             }else{
                 echo "Chưa khớp";

@@ -38,19 +38,21 @@
                     </div>
                     <div class="col-sm-3">
                         <div class="socials-link">
+                            <p>
+                                <a href="" class="socials-link">
+                                    <i class="fab fa-facebook-square"></i>
+                                        <span>Facebook</span>
+                                </a>
+                            </p>
                             <p><a href="" class="socials-link">
-                                    <i class="fa fa-facebook-official"></i>
-                                    <span>Facebook</span>
-                                </a></p>
-                            <p><a href="" class="socials-link">
-                                    <i class="fa fa-google-plus-official"></i>
+                            <i class="fab fa-google-plus-g"></i>
                                     <span>Google Plus</span>
                                 </a></p>
                             <p>
 
                                 <a href="" class="socials-link">
-                                    <i class="fa fa-youtube-play"></i>
-                                    <span>Youtube</span>
+                                <i class="fab fa-youtube"></i>
+                                <span>Youtube</span>
                                 </a>
                             </p>
                             <p>
@@ -61,14 +63,8 @@
                             </p>
                             <p>
                                 <a href="" class="socials-link">
-                                    <i class="fa fa-wechat"></i>
+                                <i class="fab fa-weixin"></i>
                                     <span>Zalo</span>
-                                </a>
-                            </p>
-                            <p>
-                                <a href="" class="socials-link">
-                                    <i class="fa fa-mortar-board"></i>
-                                    <span>E-Offices</span>
                                 </a>
                             </p>
                             <p>
