@@ -9,7 +9,7 @@
         session_start();
     }
     require_once('controller/config.php');
-    $sql = "SELECT * FROM posts ORDER BY created_at LIMIT 0,3 ";
+    $sql = "SELECT * FROM posts ORDER BY created_at DESC LIMIT 0,3";
     $result = mysqli_query($conn,$sql);
 ?>
 <!-- newspaper -->
@@ -25,11 +25,11 @@
                         <!--  -->
                         <?php  while($row = mysqli_fetch_assoc($result)){ ?>
                             <div class="col-sm-4">
-                                <div class="card w-100">
-                                    <img src="<?php echo $row['image'] ?>" class="img-fluid" width="225px" height="00px">
+                                <div class="card w-100 h-100">
+                                    <img src="<?php echo $row['image'] ?>" class="card-img-top" width="250px" height="150px">
                                     <div class="card-body pt-0 pl-2">
                                         <h5 class="card-title" style="font-style: 16px;"></h5> <a href="postdetail.php?id=<?php echo $row['id'] ?>"><?php echo $row['title'] ?></a></h5>
-                                        <p class="card-text" style="font-size: 13px;"><?php echo $row['description'] ?></p>
+                                        <p class="card-text mt-2" style="font-size: 13px;"><?php echo $row['description'] ?></p>
                                     </div>
                                 </div>
                             </div>
@@ -53,15 +53,14 @@
                 <span class="mb-3" style="width: 40px; height: 2px; background: #aa914d;display:block;"></span>
                 <div class="video">
                     <div class="img-container">
-                        <iframe width="270" height="140" src="https://www.youtube.com/embed/JViDyojZzhs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
+                    <iframe width="300" height="150" src="https://www.youtube.com/embed/v7gvVs9PqjE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                    </div>
                     <br>
                     <ul class="list-news">
-                        <li><a href="#"><i class="fa fa-angle-right"></i>Điểm tin tháng 8</a></li>
-                        <li><a href="#"><i class="fa fa-angle-right"></i>ĐH Nguyễn Tất Thành - 20 năm dấu ấn một
+                        <li><a href="#"><i class="fa fa-angle-right"></i>Giới thiệu ngành kỹ thuật phần mềm</a></li>
+                        <li><a href="#"><i class="fa fa-angle-right"></i>ĐH Thủy Lợi - 60 năm dấu ấn một
                                 chặng đường</a></li>
-                        <li><a href="#"><i class="fa fa-angle-right"></i>NỎ THẦN-TẬP 8 | BẬT MÍ VỀ NỎ THẦN VÀ NHỮNG
-                                CÂU CHUYỆN CÓ THẬT</a></li>
+                                <li><a href="#"><i class="fa fa-angle-right"></i>ĐH Thủy Lợi - 60 năm dấu ấn một
+                                chặng đường</a></li>
                     </ul>
                     <div class="seemore-right my-4">
                         <a href="#"><i class="fa fa-chevron-circle-right mr-2 c-blue-a5"></i>Xem thêm</a>
@@ -103,7 +102,7 @@
                         <div class="card pt-5 border-0" style="background: url(http://ntt.edu.vn/web/upload/images/hp_nhatruong-01.svg) no-repeat top/50%">
                             <div class="card-body">
                                 <h5 class="card-title text-white text-center" style="font-size: 24px;">Đại học hạnh phúc</h5>
-                                <p class="card-text text-white text-center">Đại học Nguyễn Tất Thành là ngôi trường tri thức và hạnh phúc dành cho sinh viên với 5 giá trị nổi bật.</p>
+                                <p class="card-text text-white text-center">Đại học Thủy Lợi là ngôi trường tri thức và hạnh phúc dành cho sinh viên với 5 giá trị nổi bật.</p>
                             </div>
                         </div>
                     </div>
@@ -157,10 +156,10 @@
                 <h3 class="lead mb-1">Hợp tác quốc tế</h3>
                 <span class="mb-3" style="width: 80px; height: 2px; background: #aa914d;display:block;"></span>
                 <div class="card border-0" style="width: 18rem;">
-                    <img class="card-img-top img-fluid" style="height: 180px;" src="http://ntt.edu.vn/web/upload/images/Tin_Tuc/201910_tin/72329960_550533865752919_8452850179488350208_n.jpg">
+                    <img class="card-img-top img-fluid" style="height: 180px;" src="http://www.tlu.edu.vn/Portals/0/2020/HTQT/0k4a9757.JPG">
                     <div class="card-body px-0">
-                        <h5 class="card-title" style="font-size: 18px;">Sinh viên Hàn Quốc tham gia học tập Tiếng Việt</h5>
-                        <p class="card-text" style="font-size: 13px;">NTTU – Sáng ngày 07/10/2019, tại cơ sở quận 7, Trường ĐH Nguyễn Tất Thành đã tổ chức thành công chương trình Khai giảng khóa học Tiếng Việt ĐH Kyungsung (Hàn Quốc)</p>
+                        <h5 class="card-title" style="font-size: 18px;">Trường ĐH Thủy lợi tổ chức lễ ký kết trực tuyến Biên bản ghi nhớ với ĐH Keimyung, Hàn Quốc</h5>
+                        <p class="card-text" style="font-size: 13px;">(TLU) – Ngày 22/10/2020, lần đầu tiên Trường ĐH Thủy lợi tổ chức Lễ ký kết Biên bản ghi nhớ trực tuyến với ĐH Keimyung, Hàn Quốc</p>
                     </div>
                     <div class="more">
                         <a href="#" class="mr-0"><i class="fa fa-chevron-circle-right mr-2 c-blue-a5"></i>Xem thêm</a>
@@ -172,10 +171,10 @@
                 <h3 class="lead mb-1">Môi trường học tập</h3>
                 <span class="mb-3" style="width: 80px; height: 2px; background: #aa914d;display:block;"></span>
                 <div class="card border-0" style="width: 18rem;">
-                    <img class="card-img-top img-fluid" style="height: 180px;" src="http://ntt.edu.vn/web/upload/images/3e3.JPG">
+                    <img class="card-img-top img-fluid" style="height: 180px;" src="http://cse.tlu.edu.vn/Portals/0/Images/2016/f4.jpg?ver=2016-11-23-145003-203">
                     <div class="card-body px-0">
-                        <h5 class="card-title" style="font-size: 18px;">Tìm hiểu về các câu lạc bộ tại Trường ĐH Nguyễn Tất Thành</h5>
-                        <p class="card-text" style="font-size: 13px;">NTTU – Sáng ngày 07/10/2019, tại cơ sở quận 7, Trường ĐH Nguyễn Tất Thành đã tổ chức thành công chương trình Khai giảng khóa học Tiếng Việt ĐH Kyungsung (Hàn Quốc)</p>
+                        <h5 class="card-title" style="font-size: 18px;">Trao học bổng và chứng chỉ cho học viên lớp CNTT Fsoft</h5>
+                        <p class="card-text" style="font-size: 13px;">Ngày 22/11, tại Văn phòng Khoa Công nghệ Thông tin (P301- C1) đã diễn ra buổi Tổng kết khóa học CNTT ngắn hạn do Công ty Fsoft (Thuộc tập đoàn FPT) phối hợp với Khoa Công nghệ Thông tin tổ chức</p>
                     </div>
                     <div class="more">
                         <a href="#" class="mr-0"><i class="fa fa-chevron-circle-right mr-2 c-blue-a5"></i>Xem thêm</a>
@@ -193,7 +192,7 @@
                         </div>
                         <div class="col-9">
                             <div class="card-body py-0">
-                                <h5 class="card-title" style="font-size: 16px; font-weight: 600;">Ngày Doanh nhân Việt Nam và Đại hội CLB Doanh nghiệp Trường Đại học Nguyễn Tất Thành</h5>
+                                <h5 class="card-title" style="font-size: 16px; font-weight: 600;">Ngày Doanh nhân Việt Nam và Đại hội CLB Doanh nghiệp Trường Đại học Thủy Lợi</h5>
                             </div>
                         </div>
                     </div>
@@ -205,7 +204,7 @@
                         </div>
                         <div class="col-9">
                             <div class="card-body py-0">
-                                <h5 class="card-title" style="font-size: 16px; font-weight: 600;">Ngày Doanh nhân Việt Nam và Đại hội CLB Doanh nghiệp Trường Đại học Nguyễn Tất Thành</h5>
+                                <h5 class="card-title" style="font-size: 16px; font-weight: 600;">Ngày Doanh nhân Việt Nam và Đại hội CLB Doanh nghiệp Trường Đại học Thủy Lợi</h5>
                             </div>
                         </div>
                     </div>
@@ -217,7 +216,7 @@
                         </div>
                         <div class="col-9">
                             <div class="card-body py-0">
-                                <h5 class="card-title" style="font-size: 16px; font-weight: 600;">Ngày Doanh nhân Việt Nam và Đại hội CLB Doanh nghiệp Trường Đại học Nguyễn Tất Thành</h5>
+                                <h5 class="card-title" style="font-size: 16px; font-weight: 600;">Ngày Doanh nhân Việt Nam và Đại hội CLB Doanh nghiệp Trường Đại học Thủy Lợi</h5>
                             </div>
                         </div>
                     </div>

@@ -1,18 +1,19 @@
 <?php
-include "config.php";
-$departid = 0;
-if(isset($_POST['depart'])){
-$departid = mysqli_real_escape_string($con,$_POST['depart']); // department id
-}
-$users_arr = array();
-if($departid > 0){
-$sql = "SELECT id,name FROM users WHERE department=".$departid;
-$result = mysqli_query($con,$sql);
-while( $row = mysqli_fetch_array($result) ){
-$userid = $row['id'];
-$name = $row['name'];
-$users_arr[] = array("id" => $userid, "name" => $name);
-}
+    include "config.php";
+    $categoryId = 0;
+    if(isset($_POST['depart'])){
+    $categoryId = mysqli_real_escape_string($con,$_POST['depart']); // department id
+    }
+    $subcategory = array();
+    if($categoryId > 0){
+    $sql = "SELECT subcategory_id,subcategory_title FROM sub_category WHERE category=".$categoryId;
+    $result = mysqli_query($con,$sql);
+    while( $row = mysqli_fetch_array($result) ){
+    $userid = $row['subcategory_id'];
+    $name = $row['subcategory_title'];
+    $subcategory[] = array("id" => $userid, "name" => $name);
+    }
 }
 // encoding array to json format
-echo json_encode($users_arr);
+echo json_encode($subcategory);
+?>

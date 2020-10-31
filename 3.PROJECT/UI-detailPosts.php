@@ -9,7 +9,7 @@
 
     <table class="table  mb-4" >
             <thead class="thead-dark">
-                <tr><a href="http://localhost/web/3.PROJECT/UI-createUser.php" class="btn btn-success mt-4 mr-1">+ Add User</a></tr>
+                <tr><a href="http://localhost/web/3.PROJECT/UI-createPost.php" class="btn btn-success mt-4 mr-1">+ Add Post</a></tr>
                 <tr>
                     <th>ID</th>
                     <th>Title</th>

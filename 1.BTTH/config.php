@@ -2,7 +2,7 @@
 $host = "localhost"; /* Host name */
 $user = "root"; /* User */
 $password = ""; /* Password */
-$dbname = "ajax"; /* Database name */
+$dbname = "175a071422"; /* Database name */
 $con = mysqli_connect($host, $user, $password,$dbname);
 // Check connection
 if (!$con) {

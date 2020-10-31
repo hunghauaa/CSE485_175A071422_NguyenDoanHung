@@ -23,9 +23,19 @@
                             <li class="top-header__item">Đào Tạo Quốc Tế</li>
                             <?php if (isset($_SESSION['name'])&&isset($_SESSION['role'])){ ?>
                                 <li class="top-header__item"><a href="profile.php">Xin chào <?php echo $_SESSION['name'] ?></a></li>
-                                <li class="top-header__item"><a href="http://localhost/web/3.PROJECT/UI-detailUsers.php">Admin</a></li>
-                                <li class="top-header__item"><a href="http://localhost/web/3.PROJECT/UI-detailPosts.php">Admin</a></li>
-                                <li class="top-header__item"><a href="controller/users/logout.php">Đăng Xuất</a></li>
+                                <!-- <li class="top-header__item"></li> -->
+                                <!-- <li class="top-header__item"></li> -->
+                                <li class="nav-item dropdown top-header__item">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Admin
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="http://localhost/web/3.PROJECT/UI-detailUsers.php">Quản lý người dùng</a>
+                                <a class="dropdown-item" href="http://localhost/web/3.PROJECT/UI-detailPosts.php">Quản lý bài viết</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item"  href="controller/users/logout.php">Đăng Xuất</a>                                </div>
+                            </li>
+                                <!-- <li class="top-header__item"></li> -->
 
                             <?php }elseif (isset($_SESSION['name'])){ ?>
                                 <li class="top-header__item"><a href="profile.php">Xin chào <?php echo $_SESSION['name'] ?></a></li>
