@@ -28,7 +28,7 @@
                                 <div class="card w-100 h-100">
                                     <img src="<?php echo $row['image'] ?>" class="card-img-top" width="250px" height="150px">
                                     <div class="card-body pt-0 pl-2">
-                                        <h5 class="card-title" style="font-style: 16px;"></h5> <a href="postdetail.php?id=<?php echo $row['id'] ?>"><?php echo $row['title'] ?></a></h5>
+                                        <h5 class="card-title" style="font-style: 16px;"></h5> <a href="UI-readPost.php?id=<?php echo $row['id'] ?>"><?php echo $row['title'] ?></a></h5>
                                         <p class="card-text mt-2" style="font-size: 13px;"><?php echo $row['description'] ?></p>
                                     </div>
                                 </div>

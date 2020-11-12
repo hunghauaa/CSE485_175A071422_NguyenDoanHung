@@ -19,7 +19,7 @@
                     <th>Role</th>
                     <th>Created</th>
                     <!-- <th>Updated</th> -->
-                    <th>Activation_code</th>
+                    <!-- <th>Activation_code</th> -->
                     <!-- <th>Actived</th> -->
                     <th>Edit</th>
                     <th>Delete</th>
@@ -40,7 +40,7 @@
                     <td> <?php echo $row['role'];?></td>
                     <td> <?php echo $row['create_at'];?></td>
                     <!-- <td> <?php echo $row['update_at'];?></td> -->
-                    <td> <?php echo $row['activation_code'];?></td>
+                    <!-- <td> <?php echo $row['activation_code'];?></td> -->
                     <!-- <td> <?php echo $row['actived'];?></td> -->
                     <td><a href="http://localhost/web/3.PROJECT/UI-editUser.php?id=<?php echo $row['id'];?>" class="btn btn-primary"><i class="fas fa-edit"></i></a></td>
                     <td><a href="http://localhost/web/3.PROJECT/controller/users/deleteUser.php?id=<?php echo $row['id'];?>" class="btn btn-danger"><i class="fas fa-trash-alt"></i></a></td>

@@ -24,7 +24,7 @@
       <img src="image/use.svg" id="icon" alt="User Icon" />
     </div> -->
     <br>
-    <h3>User Login</h3>
+    <h3>Đăng nhập</h3>
     <!-- Login Form -->
     <form action="controller/users/login.php" method="POST">
       <input type="text" id="login" class="fadeIn second" name="txtEmail" placeholder="Email">

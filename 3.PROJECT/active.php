@@ -12,7 +12,7 @@
     if(mysqli_num_rows($result)>0){
         $sql = "UPDATE users SET actived = '1' WHERE activation_code = '$code'";
         if(mysqli_query($conn,$sql)){
-            header("Location: update-thanks.php");
+            header("Location: UI-login.php");
             exit();
         }
     }

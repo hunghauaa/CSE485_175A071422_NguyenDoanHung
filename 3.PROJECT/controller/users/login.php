@@ -36,7 +36,7 @@
                 echo "Chưa khớp";
             }
         }else{
-            echo ".....";
+            echo "Tài khoản không tồn tại hoặc chưa được kích hoạt";
         }
 
     }else{
