@@ -34,7 +34,7 @@
                     if( $error != '' ) {
                         die("Có lỗi khi gửi mail");
                     }else {
-                        echo "Vui lòng đăng nhập vào mail để xác nhận tài khoản!";
+                        echo "Đăng ký thành công!!!Vui lòng đăng nhập vào mail để xác nhận tài khoản!";
                     }
     
                 }

@@ -33,7 +33,7 @@
                 }
                 Header("Location:http://localhost/web/3.PROJECT/");
             }else{
-                echo "Chưa khớp";
+                echo "Mật khẩu chưa chính xác";
             }
         }else{
             echo "Tài khoản không tồn tại hoặc chưa được kích hoạt";
